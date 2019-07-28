@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<!--
+	Intensify by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Anya Form</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">Anya Form</a>
+			</header>
+
+		
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<header class="align-center">
+						<h1>Info Page!</h1>
+						<p>Your information, promptly delivered.</p>
+
+						<h2>
+								<p id="answer1">Your first name is : &nbsp;</p>
+								<p id="answer2">Your last name is : &nbsp;</p>
+								<p id="answer3">Your Street Address is: &nbsp;</p>
+								<p id="answer4">Your City: &nbsp;</p>
+								<p id="answer5">Your State: &nbsp;</p>
+								<p id="answer6">Your ZipCode: &nbsp;</p>
+								<!--p id="answer7">Your Email: &nbsp;</p>
+								<p id="answer8">Your Phone: &nbsp;</p-->
+								
+								
+								</h2>
+								<script>
+
+								document.getElementById("answer1").innerHTML += localStorage.getItem("fnames");
+								document.getElementById("answer2").innerHTML += localStorage.getItem("lnames");
+								document.getElementById("answer3").innerHTML += localStorage.getItem("address");
+								document.getElementById("answer4").innerHTML += localStorage.getItem("cities");
+								document.getElementById("answer5").innerHTML += localStorage.getItem("states");
+								document.getElementById("answer6").innerHTML += localStorage.getItem("zipcodes");
+								document.getElementById("answer7").innerHTML += localStorage.getItem("emails");
+								document.getElementById("answer8").innerHTML += localStorage.getItem("phones");
+
+								
+								
+								</script>
+
+						<!--head>
+							<script>
+							
+								// Called on body's `onload` event
+								function init() {
+									// Retrieving the text input's value which was stored into localStorage
+									var mytext = localStorage.getItem("mytext");
+							
+									// Writing the value in the document
+									document.write("passed value = "+mytext);
+								}
+							
+							</script>
+							</head>    
+							
+							<body onload="init();">
+							
+							</body-->
+							
+					</header>
+					
+				</div>
+			</section>
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+		
+</html>
