@@ -262,8 +262,16 @@
 								</body>
 							</div>
 
+							<button type="submit" class="btn btn-primary" > Validate! </button>
 							<input type="button" onclick= "saveData()" value="submit">
-							<button type="submit" class="btn btn-primary" >Submit</button>
+							<!--1 and 4 dont validate! FORM-->
+							<!--2 and 3 dont submit! FORM-->
+							<!--button type="submit" onclick="return checkMandatoryFieldsAndSubmit()"> Validate! </button>-->
+
+							
+
+							<!--<input type="submit" name="Submit" class="btn btn-primary" onclick= "saveData()"
+							value="Submit" ng-disabled="button.disabled"/>-->
 						</form>
 
 				</form>
